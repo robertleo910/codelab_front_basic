@@ -17,11 +17,13 @@ body {
 }
 .main {
   background: #fa8072;
+  width: 70%;
   height: 600px;
   line-height: 600px;
 }
 .sidemenu{
   background: #f0b262;
+  width:30%;
   height: 600px;
   line-height: 600px;
 }
