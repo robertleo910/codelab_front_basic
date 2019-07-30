@@ -20,6 +20,11 @@ body {
   height: 600px;
   line-height: 600px;
 }
+.sidemenu{
+  background: #f0b262;
+  height: 600px;
+  line-height: 600px;
+}
 .footer {
   background: #add8e6;
   padding: 50px 0;
