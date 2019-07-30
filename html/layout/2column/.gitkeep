@@ -12,7 +12,7 @@
   <div class="wrap">
     <header class="header">ヘッダー</header>
     <main class="main">メインコンテンツ</main>
-    <main class="main1">サイドメニュー</main>
+    <aside class="main1">サイドメニュー</aside>
     <footer class="footer">フッター</footer>
   </div>
 </body>
