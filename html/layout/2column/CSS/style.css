@@ -20,12 +20,14 @@ body {
   width: 70%;
   height: 600px;
   line-height: 600px;
+  float: left;
 }
 .sidemenu{
   background: #f0b262;
   width:30%;
   height: 600px;
   line-height: 600px;
+  float: right;
 }
 .footer {
   background: #add8e6;
