@@ -19,8 +19,6 @@ body {
 }
 .main {
   background: #fafafa;
-  height: 600px;
-  line-height: 600px;
   display: flex;
 }
 .left_side{
@@ -33,28 +31,34 @@ a{
   color: #d43d4a;
 }
 .center{
-  width: 40%;
+  width: 60%;
 }
 .text{
   background: #d14a3b;
-  display: block;
-  height: 40%;
-  list-style-type: disc;
   word-break: break-all;
   margin: 2rem;
+  padding: 2rem;
+}
+.text ul{
+  list-style-type: disc;
 }
 .subtitle{
   background: #62c3e4;
-  display: block;
   margin: 2rem;
-  height: 30%;
+}
+.subtitle ul li{
+  display: inline-block;
 }
 .right_side{
   background: #8b4b445e;
-  width: 40%;
+  width: 20%;
   margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer {
   background: #add8e6;
-  padding: 5rem 0;
+  padding: 15rem 0;
+  text-align: right;
 }
