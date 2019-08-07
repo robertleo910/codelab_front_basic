@@ -4,25 +4,55 @@ html{
 }
 body {
   background: #f0f8ff;
-}
-* {
-  box-sizing: border-box;
-}
-.wrap {
   max-width: calc(1280/1920*100%);
   margin: 0 auto;
   font-size: 2rem;
   text-align: center;
 }
+* {
+  box-sizing: border-box;
+}
 .header {
-  background: #e6e6fa;
+  background: #666670;
   padding: 5rem 0;
+  text-align: center;
 }
 .main {
-  background: #fa8072;
+  background: #fafafa;
   height: 600px;
   line-height: 600px;
   display: flex;
+}
+.left_side{
+  background: #3daed4;
+  text-align: left;
+  width: 20%;
+  margin: 2rem auto;
+}
+a{
+  color: #d43d4a;
+}
+.center{
+  width: 40%;
+}
+.text{
+  background: #d14a3b;
+  display: block;
+  height: 40%;
+  list-style-type: disc;
+  word-break: break-all;
+  margin: 2rem;
+}
+.subtitle{
+  background: #62c3e4;
+  display: block;
+  margin: 2rem;
+  height: 30%;
+}
+.right_side{
+  background: #8b4b445e;
+  width: 40%;
+  margin: 2rem auto;
 }
 .footer {
   background: #add8e6;
