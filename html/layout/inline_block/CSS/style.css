@@ -1,0 +1,37 @@
+@charset "utf-8";
+html{
+  font-size: 62.5%;
+}
+body{
+  background: #f0f8ff;
+}
+*{
+  box-sizing: border-box;
+}
+.wrap{
+  max-width: calc(1280 / 1920 * 100%);
+  font-size: 0;
+  margin: 50px auto;
+}
+.nav{
+  background: #c398db;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15%;
+  font-size: 2rem;
+}
+.nav ul li{
+  text-align: center;
+}
+a{
+  color :#904cb4;
+}
+.column{
+  background: #7fcca5;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  font-size: 2rem;
+}
