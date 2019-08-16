@@ -12,26 +12,22 @@ body{
   max-width: calc(1280 / 1920 * 100%);
   font-size: 0;
   margin: 50px auto;
+  text-align: center;
 }
 .nav{
   background: #c398db;
-  text-align: center;
   display: inline-block;
   vertical-align: middle;
-  width: 15%;
+  width: 30%;
   font-size: 2rem;
-}
-.nav ul li{
-  text-align: center;
 }
 a{
   color :#904cb4;
 }
 .column{
   background: #7fcca5;
-  text-align: center;
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
+  width: 70%;
   font-size: 2rem;
 }
