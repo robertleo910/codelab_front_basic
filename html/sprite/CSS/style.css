@@ -1,0 +1,24 @@
+nav {
+  width: 600px;
+  margin: 50px auto;
+}
+ 
+ul {
+  display: flex;
+  background: wheat;
+}
+ 
+li {
+  width: 100px;
+  height: 50px;
+  background: url(./sprite.png) no-repeat;
+}
+ 
+li:hover {
+  transition: .3s;
+}
+ 
+/* 以下から記述する */
+li:hover{
+  background-position: right top;
+}
