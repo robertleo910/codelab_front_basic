@@ -1,0 +1,54 @@
+@charset "utf-8";
+.division{
+  margin: 50px auto;
+}
+.division1 th{
+  width: 25%;
+  padding: 5px;
+  text-align: left;
+}
+.wrap{
+  text-align: center;
+  margin: 20px auto;
+}
+.wrap1{
+  font-size: 3rem;
+}
+.wrap2{
+  font-size: 2rem;
+}
+table{
+  border: 2px solid grey;
+  width: 80%;
+  margin: 20px auto;
+}
+th,td{
+  border: 1px solid grey;
+  vertical-align: middle;
+}
+th{
+  background: rgb(211, 208, 208);
+  font-weight: bold;
+}
+.text input{
+  width: 90%;
+}
+textarea{
+  resize: none;
+  width: 80%;
+  height: 100px;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav input{
+  background: rgb(76, 181, 230);
+  color: white;
+  padding: 10px 50px;
+  border: none;
+}
+input[type="text"]{
+  width: 80%;
+}
