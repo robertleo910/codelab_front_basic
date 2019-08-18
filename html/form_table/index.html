@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>テーブルフォーム</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div class="division">
+    <p class="wrap wrap1">テーブル練習</p>
+    <p class="wrap wrap2">プログラミング言語</p>
+    <table>
+      <tr>
+        <th>ジャンル</th>
+        <th>言語名</th>
+      </tr>
+      <tr>
+        <td rowspan="3">フロントエンド</td>
+        <td>HTML</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td rowspan="3">バックエンド</td>
+        <td>PHP</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+      </tr>
+      <tr>
+        <td>Phython</td>
+      </tr>
+    </table>
+  </div>
+  <div class="division division1">
+    <p class="wrap wrap1">フォーム練習</p>
+    <p class="wrap wrap2">お問い合わせ</p>
+    <form method="POST" action="">
+      <table>
+        <tr>
+          <th>お名前</th>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <th>ご住所</th>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <th>性別</th>
+          <td><input type="radio" name="gender" value="0" checked>男性<input type="radio" name="gender" value="1">女性</td>
+        </tr>
+        <tr>
+          <th>お問い合わせ種別</th>
+          <td>
+            <select name="type">
+              <option value="data">資料請求</option>
+              <option value="others">その他</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>ご希望の連絡方法（複数選択可）</th>
+          <td>
+            <input type="checkbox" value="mail">メール
+            <input type="checkbox" value="phone">電話
+            <input type="checkbox" value="visit">訪問
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th>
+          <td>
+            <textarea></textarea>
+          </td>
+        </tr>
+      </table>
+      <nav>
+        <input type="submit" name="submit" value="送信">
+      </nav>
+    </form>
+  </div>
+</body>
+
+</html>
