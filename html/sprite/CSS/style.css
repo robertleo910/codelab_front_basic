@@ -5,20 +5,31 @@ nav {
  
 ul {
   display: flex;
-  background: wheat;
 }
  
 li {
   width: 100px;
   height: 50px;
-  background: url(./sprite.png) no-repeat;
+  background-image: url(../sprite.png);
+  background-repeat: no-repeat;
 }
- 
-li:hover {
-  transition: .3s;
+li:nth-child(2){
+  background-position-x: 20%;
 }
- 
+li:nth-child(3){
+  background-position-x: 40%;
+}
+li:nth-child(4){
+  background-position-x: 60%;
+}
+li:nth-child(5){
+  background-position-x: 80%;
+}
+li:nth-child(6){
+  background-position-x: 100%;
+}
 /* 以下から記述する */
 li:hover{
-  background-position: right top;
+  background-position-y: 100%;
+  transition: .3s;
 }
