@@ -41,7 +41,7 @@
 	　　　　→要素１のmargin-bottomと、その後ろの要素２のmargin-topが並ぶと、値が大きい方	　　　　　	　のmarginが適用される。
 	　　　
 	　　　２、親要素ともmarginの相殺は起こる
-	　　　　→例えばある親要素のmargin-topが40px,その親要素の子要素のmargin-topが10pxの時	　　　　　	　、この親要素の前にある要素とのmarginには子要素からの40pxのmarginが適用され	　　　　　	　る。
+	　　　　→例えばある親要素のmargin-topが10px,その親要素の子要素のmargin-topが40pxの時	　　　　　	　、この親要素の前にある要素とのmarginには子要素からの40pxのmarginが適用され	　　　　　	　る。
 	　　　
 	　　　つまり、「marginが並ぶとそのうちの１つしか適用されない」、及び「要素間余白が最	　　　	　　　も大きくなるmarginが適用される」。
 
