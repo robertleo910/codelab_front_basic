@@ -112,12 +112,12 @@
 	　　		　 また、1つの記事として成立するものはarticleタグを使用することが可能　			　　。	　　　
 
 	　　　sectionタグ :説明している内容ごとに区切る時に使用する。
-	　　　（例）「猫とは・・・」「犬とは・・・」「ウサギとは・・・」は全て内容ごとに完結	　　　　　　         しているのでsectionタグで囲むことが可能。										
+	　　　									
 13.サイズの単位 px, % ,em, remの違い
 	・・・px  :サイズを絶対値指定
 	　　　%   :サイズを相対値指定（親要素基準）
 	　　　em  :サイズを相対値指定（親要素基準）、100%=1emに相当する。
-	　　　rem :サイズを相対値指定（ルート要素基準）、root emの略。ルート要素(htmlセレクタ		   )を元にしたサイズ指定法。
+	　　　rem :サイズを相対値指定（ルート要素基準）、root emの略。ルート要素(htmlセレクタ		   　　　　)を元にしたサイズ指定法。
 	　　　　　 （例）html { font-size:20px; }
 	    		 p { font-size:10px; }
 			 p .test { font-size:2rem; }
@@ -126,8 +126,8 @@
 14.max-width(max-height), min-width(min-height), vw, vhの違い
 	・・・max-width (max-height):<div>や<p>など、内容領域における幅（高さ）の最大値を指定	　　　　　　		　　 	     するプロパティ。 
 	　　　min-width (min-height):<div>や<p>など、内容領域における幅（高さ）の最小値を指定	　　　　　　		　　 　　　　するプロパティ。
-	　　　vw		    :「viewport width」の略。画面幅に対する相対値。100が基準				      値。
-	      vh	  	    :「viewport height」の略。画面高さに対する相対値。100が基				      準値。
+	　　　vw		    :「viewport width」の略。画面幅に対する相対単位。100が基　　　　　　　　　　　　　　　　　　　準値。
+	      vh	  	    :「viewport height」の略。画面高さに対する相対単位。100が　　　　　　　　　　　　　　　　　　　基準値。
 
 	　　　●viewportとは画面サイズのこと。
 
