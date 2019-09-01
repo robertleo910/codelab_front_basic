@@ -1,0 +1,113 @@
+@charset "utf-8";
+*{
+  box-sizing: border-box;
+}
+.wrap{
+  max-width: calc(1280/1920*100%);
+  margin: 0 auto;
+  display: flex;
+}
+.header{
+  background: rgb(32, 32, 128);
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.header img{
+  display: block;
+  margin: 30px auto;
+}
+.header h1,.header a{
+  color: white;
+}
+.header h1{
+  margin: 10px auto;
+  font-size: 1.7em;
+  text-align: center;
+}
+.header ul{
+  margin: 40px auto;
+}
+.header li{
+  margin: 30px;
+}
+.header a{
+  text-align: left;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+/*ここでヘッダーの最後の部分の色を変える*/
+/*.header a:last-child{
+  color: gold;
+}*/
+.content{
+  display: block;
+  width: 80%;
+}
+.main>img{
+  width: 95%;
+  margin-right: 5px;
+  margin-bottom: 70px;
+}
+.wrap1{
+  display: block;
+  margin: 0 40px 30px;
+  line-height: 30px;
+}
+.wrap1 h2{
+  margin: 0 auto 30px;
+  font-size: 2em;
+  color: rgb(32, 32, 128);
+}
+.wrap1>p{
+  margin: 20px auto;
+}
+.wrap1 a{
+  text-decoration: none;
+  padding: 3% 10%;
+  background: rgb(32,32,128);
+  color: white;
+}
+.wrap2{
+  display: flex;
+  margin: 0 40px 30px;
+}
+.wrap2>img{
+  height: 350px;
+  width: 30%;
+}
+.wrap3{
+  display: flex;
+  justify-content: space-between;
+}
+.wrap3 img{
+  margin-right: 2%;
+}
+.wrap3 img:last-child{
+  margin-right: 0;
+}
+.wrap3 form{
+  justify-content: space-between;
+}
+.gallery_one img{
+  width: calc(92%/5);
+}
+.second_gallery img{
+  width: calc(96%/3);
+}
+.third_gallery img{
+  width: calc(94%/4);
+}
+.button{
+  padding: 15px 30px;
+  border: none;
+  background: rgb(32,32,128);
+  color: white;
+}
+.footer{
+  margin: 0 40px 30px;
+}
+.footer p{
+  display: inline;
+  color: blue;
+}
