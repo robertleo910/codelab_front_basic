@@ -24,6 +24,9 @@ a{
 .main{
   width: 100%;
 }
+.main>img{
+  width: 100%;
+}
 .text{
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +41,7 @@ a{
   margin: 1px 15px;
 }
 .text2:nth-child(odd){
-  margin-left: none;
+  margin-left: 0;
 }
 .wrap1{
   display: flex;
