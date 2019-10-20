@@ -1,0 +1,328 @@
+@charset "utf-8";
+*{
+  box-sizing: border-box;
+}
+/*---------------ヘッダー部分---------------*/
+body{
+  font-family:'Lucida Console', sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.header{
+  background-image: url(../images/homebg.jpg);
+  height: 900px;
+  color: white;
+  position: relative;
+}
+.header::after{
+  content: '';
+  border: 1.5px solid white;
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  bottom: 70px;
+  border-radius: 110%/70%;
+}
+.common-format{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap{
+  margin: 0 400px;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .wrap{
+    margin: 0 170px;
+  }
+}
+.wrap1{
+  padding: 190px 400px;
+}
+.hamberger{
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+.headline{
+  font-size: 3em;
+  color: black;
+  margin-bottom: 120px;
+  font-weight: 1000;
+  position: relative;
+}
+.headline::after{
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: 45%;
+  width: 10%;
+  height: 1px;
+  background-color: black;
+}
+.header .headline{
+  color: white;
+}
+.headline-color::after{
+  background-color: white;
+}
+.text{
+  font-weight: 800;
+  line-height: 30px;
+}
+/*---------------ここまでヘッダー部分---------------*/
+/*---------------メイン---------------*/
+/**************introduction***********/
+@media screen and (min-width:375px) and (max-width:1500px){
+  .wrap1{
+    padding: 190px 60px;
+  }
+}
+/**************pure*******************/
+.pure{
+  background-image: url(../images/creativitybg.jpg);
+  height: 500px;
+}
+.common-format1{
+  border: 2px solid white;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 20px 30px;
+  color: white;
+}
+/***************portfolio**************/
+.common-format2{
+  padding: 200px 100px;
+}
+.portfolio li{
+  padding: 40px 25px;
+  opacity: 0.5;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .portfolio .common-format{
+    flex-wrap: wrap;
+  }
+  .portfolio li{
+    padding: 20px 70px;
+  }
+}
+.portfolio .thumbnail{
+  flex-wrap: wrap;
+  margin: 0 200px;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .portfolio .thumbnail{
+    margin: 0 ;
+  }
+}
+.thumbnail{
+  display: flex;
+}
+.portfolio .thumbnail-item{
+  width: calc(96%/3);
+  margin-right: 2%;
+  margin-bottom: 4%;
+  position: relative;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .portfolio .thumbnail-item{
+    width: calc(100%);
+    margin-right: 0;
+  }
+}
+.portfolio .thumbnail-item:nth-child(3n){
+  margin-right: 0;
+}
+.portfolio img{
+  width: 100%;
+  height: 100%;
+}
+.portfolio .mask{
+  background-color: rgba(0,0,0,.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: all .2s ease;
+}
+.portfolio .mask:hover{
+  opacity: 1;
+}
+/*****************here**************/
+.common-format3{
+  border: 2px solid black;
+  padding: 10px 15px;
+  margin: 50px auto;
+}
+.here{
+  background-image: url(../images/heretohelpbg.jpg);
+  height: 500px;
+}
+/******************clients**********/
+.clients{
+  background-color: rgba(240, 235, 235, 0.89);
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .clients .thumbnail{
+    flex-wrap: wrap;
+  }
+}
+.clients .thumbnail-item{
+  width: calc(90%/6);
+  margin-right: 2%;
+  opacity: 0.5;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .clients .thumbnail-item{
+    width: calc(100%);
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
+}
+.clients .thumbnail:last-child{
+  margin-right: 0;
+}
+.clients .thumbnail-item:last-child{
+  margin-right: 0;
+}
+/******************about*************/
+.about .thumbnail,.choose .thumbnail{
+  margin: 50px 50px;
+}
+.about .thumbnail{
+  opacity: .6;
+}
+.about .thumbnail-item{
+  width: calc(94%/4);
+  margin-right: 2%;
+}
+.about .thumbnail-item:last-child{
+  margin-right: 0;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .about .thumbnail{
+    flex-wrap: wrap;
+  }
+  .about .thumbnail-item{
+    width: calc(98%/2);
+    margin-bottom: 4%;
+  }
+  .about .thumbnail-item:nth-child(2n){
+    margin-right: 0;
+  }
+}
+.about .thumbnail-item:last-child{
+  margin-right: 0;
+}
+.about .common-format{
+  border: 2px solid black;
+}
+/*******************quote************/
+.quote{
+  background-image: url(../images/videobg.jpg);
+  height: 500px;
+}
+/*******************choose***********/
+.choose .thumbnail-item{
+  width: calc(96%/3);
+  margin-right: 2%;
+}
+.choose .thumbnail-item:last-child{
+  margin-right: 0;
+}
+.thumbnail-item-setting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+.headline1{
+  font-weight: 800;
+  height: 60px;
+  font-size: 20px;
+}
+.centering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.centering a{
+  content: '';
+  display: block;
+  background-color: grey;
+  background-image: url(../images/playicon.png);
+  background-position-x: -10px;
+  background-position-y: -18.5px;
+  height: 26px;
+  width: 45px;
+  margin-right: 5px;
+}
+.left-arrow{
+  transform: scale(-1,-1);
+}
+/**************2個目のquote*******************/
+.quote2{
+  background-image: url(../images/quotebg.jpg);
+  height: 500px;
+}
+/*---------------ここまでメイン---------------*/
+/*---------------フッター---------------*/
+.footer{
+  display: flex;
+  text-align: left;
+}
+.location{
+  background-color: rgb(250, 243, 243);
+  padding: 20px 180px 20px 75px;
+  width: 30%;
+  line-height: 27px;
+}
+.footer .headline1{
+  margin-left: 0;
+  color: rgb(150, 137, 137);
+}
+.share{
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  margin-top: 20px;
+}
+.form{
+  background-color: rgba(218, 206, 206, 0.842);
+  width: 70%;
+  padding: 40px 20px 0px;
+  position: relative;
+}
+.input{
+  border: none;
+  background-color: rgba(218, 206, 206, 0.842);
+  width: 45%;
+  margin-bottom: 50px;
+}
+.message{
+  width: 91%;
+}
+.send{
+  position: absolute;
+  bottom: 55px;
+  right: 100px;
+  background-color: rgba(218, 206, 206, 0.842);
+}
+.common-format4{
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-weight: 800;
+}
+/*---------------ここまでフッター部分---------------*/
