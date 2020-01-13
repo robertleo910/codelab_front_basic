@@ -12,19 +12,10 @@ a{
   color: black;
 }
 .header{
-  background-image: url(../images/homebg.jpg);
+  background-image: url(../img/banner.jpg);
   height: 900px;
   color: white;
   position: relative;
-}
-.header::after{
-  content: '';
-  border: 1.5px solid white;
-  width: 25px;
-  height: 40px;
-  position: absolute;
-  bottom: 70px;
-  border-radius: 110%/70%;
 }
 .common-format{
   display: flex;
@@ -34,16 +25,20 @@ a{
 .wrap{
   margin: 0 400px;
 }
+.wrap img{
+  position: relative;
+  top: 170px;
+}
 @media screen and (min-width:375px) and (max-width:1500px){
   .wrap{
     margin: 0 170px;
   }
 }
 .wrap1{
-  padding: 190px 400px;
+  padding: 140px 400px;
 }
 .hamberger{
-  color: white;
+  color: rgb(231, 86, 19);
   position: absolute;
   top: 60px;
   left: 50px;
@@ -59,8 +54,8 @@ a{
   content: '';
   position: absolute;
   bottom: -60px;
-  left: 45%;
-  width: 10%;
+  left: 38%;
+  width: 24%;
   height: 1px;
   background-color: black;
 }
@@ -84,7 +79,7 @@ a{
 }
 /**************pure*******************/
 .pure{
-  background-image: url(../images/creativitybg.jpg);
+  background-image: url(../img/lepy.jpg);
   height: 500px;
 }
 .common-format1{
@@ -94,79 +89,111 @@ a{
   padding: 20px 30px;
   color: white;
 }
-/***************portfolio**************/
+/***************SOME OF OUR WORK**************/
 .common-format2{
   padding: 200px 100px;
 }
-.portfolio li{
-  padding: 40px 25px;
+.work .common-format{
+  margin: 10px 200px;
+}
+.work li{
+  width: calc(92%/5);
   opacity: 0.5;
+  margin-bottom: 10px;
 }
 @media screen and (min-width:375px) and (max-width:1500px){
-  .portfolio .common-format{
+  .work .common-format{
     flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-around;
   }
-  .portfolio li{
-    padding: 20px 70px;
+  .work li{
+    width: calc(100%/3);
+    font-size: 12px;
+    font-weight: bold;
   }
 }
-.portfolio .thumbnail{
+.work .thumbnail{
   flex-wrap: wrap;
   margin: 0 200px;
 }
 @media screen and (min-width:375px) and (max-width:1500px){
-  .portfolio .thumbnail{
+  .work .thumbnail{
     margin: 0 ;
   }
 }
 .thumbnail{
   display: flex;
 }
-.portfolio .thumbnail-item{
+.work .thumbnail-item{
   width: calc(96%/3);
   margin-right: 2%;
   margin-bottom: 4%;
   position: relative;
 }
+.work .thumbnail-item:nth-child(3n){
+  margin-right: 0;
+}
 @media screen and (min-width:375px) and (max-width:1500px){
-  .portfolio .thumbnail-item{
-    width: calc(100%);
+  .work .thumbnail-item,
+  .work .thumbnail-item:nth-child(3n){
+    width: calc(98%/2);
+    margin-right: 2%;
+  }
+  .work .thumbnail-item:nth-child(even){
     margin-right: 0;
   }
 }
-.portfolio .thumbnail-item:nth-child(3n){
-  margin-right: 0;
-}
-.portfolio img{
+.work img{
   width: 100%;
   height: 100%;
 }
-.portfolio .mask{
-  background-color: rgba(0,0,0,.4);
+.mask.hidden{
+  display: none;
+}
+.mask{
+  background-color: rgba(0,0,0,.6);
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: .1s;
+  border: 10px solid black;
+}
+.modal{
+  display: none;
+}
+.modal.show{
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;
-  transition: all .2s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transition: .1s;
+  transform: translate(-50%,-50%);
 }
-.portfolio .mask:hover{
-  opacity: 1;
+.modal p{
+  margin: 0 auto;
 }
 /*****************here**************/
 .common-format3{
-  border: 2px solid black;
-  padding: 10px 15px;
-  margin: 50px auto;
+  border: 3px solid black;
+  padding: 10px 2%;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .common-format3{
+    padding: 10px 20%;
+    margin: auto;
+  }
 }
 .here{
-  background-image: url(../images/heretohelpbg.jpg);
+  background-image: url(../img/helo.jpg);
   height: 500px;
 }
 /******************clients**********/
@@ -179,30 +206,24 @@ a{
   }
 }
 .clients .thumbnail-item{
-  width: calc(90%/6);
-  margin-right: 2%;
-  opacity: 0.5;
-  filter: grayscale(100%);
+  width: calc(80%/5);
+  margin-right: 5%;
 }
 @media screen and (min-width:375px) and (max-width:1500px){
   .clients .thumbnail-item{
-    width: calc(100%);
+    width: calc(90%);
     margin-right: 0;
-    margin-bottom: 4%;
+    margin-bottom: 15%;
   }
 }
-.clients .thumbnail:last-child{
-  margin-right: 0;
-}
+.clients .thumbnail:last-child,
 .clients .thumbnail-item:last-child{
   margin-right: 0;
 }
 /******************about*************/
-.about .thumbnail,.choose .thumbnail{
+.about .thumbnail,
+.choose .thumbnail{
   margin: 50px 50px;
-}
-.about .thumbnail{
-  opacity: .6;
 }
 .about .thumbnail-item{
   width: calc(94%/4);
@@ -210,17 +231,19 @@ a{
 }
 .about .thumbnail-item:last-child{
   margin-right: 0;
+  height: 500px;
 }
 @media screen and (min-width:375px) and (max-width:1500px){
   .about .thumbnail{
     flex-wrap: wrap;
   }
   .about .thumbnail-item{
-    width: calc(98%/2);
+    width: calc(100%);
     margin-bottom: 4%;
-  }
-  .about .thumbnail-item:nth-child(2n){
     margin-right: 0;
+  }
+  .about .headline{
+    margin-bottom: 120px;
   }
 }
 .about .thumbnail-item:last-child{
@@ -229,15 +252,15 @@ a{
 .about .common-format{
   border: 2px solid black;
 }
-/*******************quote************/
-.quote{
-  background-image: url(../images/videobg.jpg);
+/*******************PLAYBACK************/
+.playback{
+  background-image: url(../img/video.jpg);
   height: 500px;
 }
 /*******************choose***********/
 .choose .thumbnail-item{
-  width: calc(96%/3);
-  margin-right: 2%;
+  width: 100%;
+  margin: 0 2%;
 }
 .choose .thumbnail-item:last-child{
   margin-right: 0;
@@ -252,37 +275,64 @@ a{
   font-weight: 800;
   height: 60px;
   font-size: 20px;
+  margin: 30px 0;
 }
-.centering{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
+#slider>button,
+#slider>button{
+  display: none !important;
 }
-.centering a{
-  content: '';
+#slider .slick-dots li {
+  display: inline-block;
+}
+#slider .slick-dots li button {
+  position: relative;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+#slider .slick-dots li button::before {
+  cursor: pointer;
   display: block;
-  background-color: grey;
-  background-image: url(../images/playicon.png);
-  background-position-x: -10px;
-  background-position-y: -18.5px;
-  height: 26px;
-  width: 45px;
-  margin-right: 5px;
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  border-radius: 50%;
+  background: rgb(156, 128, 128);
+  width: 8px;
+  height: 8px;
 }
-.left-arrow{
-  transform: scale(-1,-1);
+#slider .slick-dots .slick-active button::before {
+  background: #000;
 }
-/**************2個目のquote*******************/
-.quote2{
-  background-image: url(../images/quotebg.jpg);
+/**************quote*******************/
+.quote{
+  background-image: url(../img/quotes.jpg);
   height: 500px;
 }
 /*---------------ここまでメイン---------------*/
 /*---------------フッター---------------*/
 .footer{
-  display: flex;
   text-align: left;
+}
+.wrap2{
+  display: flex;
+  min-height: 400px;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .wrap2{
+    display: block;
+  }
+  .location,
+  .form{
+    min-width: 100%;
+    padding: 20px;
+  }
 }
 .location{
   background-color: rgb(250, 243, 243);
@@ -303,27 +353,63 @@ a{
 .form{
   background-color: rgba(218, 206, 206, 0.842);
   width: 70%;
-  padding: 40px 20px 0px;
+  padding: 40px 20px 20px;
   position: relative;
+}
+.form:after{
+  content: "";
+  display: block;
+  clear: both;
 }
 .input{
   border: none;
   background-color: rgba(218, 206, 206, 0.842);
-  width: 45%;
+  width: calc(93%/2);
+  margin-right: 6%;
   margin-bottom: 50px;
+  border-bottom: solid 1px black;
+  height: 42px;
+}
+@media screen and (min-width:375px) and (max-width:1500px){
+  .input{
+    width: calc(100%);
+    margin-right: 0;
+  }
+}
+.input:nth-child(2){
+  margin-right: 0;
 }
 .message{
-  width: 91%;
+  width: calc(100%);
 }
 .send{
-  position: absolute;
-  bottom: 55px;
-  right: 100px;
+  float: right;
   background-color: rgba(218, 206, 206, 0.842);
 }
 .common-format4{
   border: 1px solid black;
   padding: 10px 30px;
   font-weight: 800;
+}
+.samir{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: black;
+  text-align: center;
+}
+.samir img{
+  display: block;
+  margin-bottom: 20px;
+}
+.samir small{
+  color: white;
+  line-height: 30px;
+  font-size: 14px;
+}
+.orange{
+  color: rgb(231, 86, 19);
+  display: inline;
 }
 /*---------------ここまでフッター部分---------------*/
