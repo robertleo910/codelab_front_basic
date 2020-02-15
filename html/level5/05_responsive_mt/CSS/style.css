@@ -11,6 +11,13 @@ a {
   text-decoration: none;
   color: black;
 }
+header,
+.pure,
+.here,
+.playback,
+.quote {
+  background-position: center;
+}
 header {
   background-image: url(../img/banner.jpg);
   height: 900px;
@@ -44,7 +51,8 @@ header {
   left: 50px;
 }
 .headline {
-  font-size: 2rem;
+  white-space: nowrap;
+  font-size: 1.5rem;
   color: black;
   margin-bottom: 120px;
   font-weight: 900;
@@ -227,10 +235,13 @@ header .headline {
 .about .thumbnail-item {
   width: calc(75%/4);
   margin-right: 2%;
+  height: 350px;
 }
 .about .thumbnail-item:last-child {
   margin-right: 0;
-  height: 354px;
+}
+.about .headline {
+  white-space: normal;
 }
 @media screen and (min-width:375px) and (max-width:1500px){
   .about .thumbnail {
@@ -333,14 +344,19 @@ footer {
   .location,
   .form {
     min-width: 100%;
-    padding: 20px;
   }
+}
+.location-center {
+  margin: 5% 33%;
+}
+.outer-location-center {
+  margin: 5% 2%;
 }
 .location {
   background-color: rgb(250, 243, 243);
-  padding: 20px 180px 20px 75px;
-  width: 30%;
-  line-height: 27px;
+  width: 40%;
+  line-height: 30px;
+  font-size: 1.3em;
 }
 .footer .headline1 {
   margin-left: 0;
@@ -352,10 +368,11 @@ footer {
   min-width: 100px;
   margin-top: 20px;
 }
-.form {
+.outer-location {
+  width: 60%;
   background-color: rgba(218, 206, 206, 0.842);
-  width: 70%;
-  padding: 40px 20px 20px;
+}
+.form {
   position: relative;
 }
 .form:after {
@@ -376,6 +393,9 @@ footer {
   .input {
     width: calc(100%);
     margin-right: 0;
+  }
+  .outer-location {
+    width: 100%;
   }
 }
 .input:nth-child(2) {
