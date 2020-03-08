@@ -36,7 +36,7 @@ header {
   position: relative;
   top: 170px;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .wrap {
     margin: 0 170px;
   }
@@ -80,7 +80,7 @@ header .headline {
 /*---------------ここまでヘッダー部分---------------*/
 /*---------------メイン---------------*/
 /**************introduction***********/
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .wrap1 {
     padding: 190px 60px;
   }
@@ -109,7 +109,7 @@ header .headline {
   opacity: 0.5;
   margin-bottom: 10px;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .work .common-format {
     flex-wrap: wrap;
     margin: 0;
@@ -125,7 +125,7 @@ header .headline {
   flex-wrap: wrap;
   margin: 0 200px;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .work .thumbnail {
     margin: 0 ;
   }
@@ -144,7 +144,7 @@ header .headline {
 .work .thumbnail-item:nth-child(3n) {
   margin-right: 0;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .work .thumbnail-item,
   .work .thumbnail-item:nth-child(3n) {
     width: calc(98%/2);
@@ -196,7 +196,7 @@ header .headline {
   border: 3px solid black;
   height: 50px;
   line-height: 50px;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
 }
 .here {
@@ -207,7 +207,7 @@ header .headline {
 .clients {
   background-color: rgba(240, 235, 235, 0.89);
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .clients .thumbnail {
     flex-wrap: wrap;
   }
@@ -216,7 +216,7 @@ header .headline {
   width: calc(70%/5);
   margin-right: 5%;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .clients .thumbnail-item {
     width: calc(90%);
     margin-right: 0;
@@ -243,12 +243,19 @@ header .headline {
 .about .headline {
   white-space: normal;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+.about .common-format3 {
+  padding: 4% 13%;
+}
+.common-format.thumbnail-item {
+  padding: 10%;
+}
+@media screen and (min-width:375px) and (max-width:1499px){
   .about .thumbnail {
     flex-wrap: wrap;
   }
   .about .thumbnail-item {
     width: calc(98%/2);
+    height: auto;
     margin-bottom: 4%;
     margin-right: 2%;
   }
@@ -337,7 +344,7 @@ footer {
   display: flex;
   min-height: 400px;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .wrap2 {
     display: block;
   }
@@ -389,7 +396,7 @@ footer {
   border-bottom: solid 1px black;
   height: 42px;
 }
-@media screen and (min-width:375px) and (max-width:1500px){
+@media screen and (min-width:375px) and (max-width:1499px){
   .input {
     width: calc(100%);
     margin-right: 0;
