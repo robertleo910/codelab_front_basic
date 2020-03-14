@@ -52,11 +52,11 @@ header {
 }
 .headline {
   white-space: nowrap;
-  font-size: 1.5rem;
   color: black;
   margin-bottom: 120px;
   font-weight: 900;
   position: relative;
+  font-size: 1.2rem;
 }
 .headline::after {
   content: '';
@@ -99,7 +99,7 @@ header .headline {
 }
 /***************SOME OF OUR WORK**************/
 .common-format2 {
-  padding: 200px 100px;
+  padding: 200px 20px;
 }
 .work .common-format {
   margin: 10px 200px;
@@ -262,8 +262,14 @@ header .headline {
   .about .thumbnail-item:nth-child(2n) {
     margin-right: 0;
   }
-  .about .headline {
-    margin-bottom: 120px;
+  .about .thumbnail-item:last-child {
+    height: 180px;
+  }
+  .about .common-format .headline {
+    margin-bottom: 30px;
+  }
+  .about .common-format .headline:after {
+    bottom: -20px;
   }
 }
 .about .thumbnail-item:last-child {
@@ -351,10 +357,11 @@ footer {
   .location,
   .form {
     min-width: 100%;
+    text-align: center;
   }
 }
 .location-center {
-  margin: 5% 33%;
+  margin: 5% 28%;
 }
 .outer-location-center {
   margin: 5% 2%;
