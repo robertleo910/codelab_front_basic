@@ -196,7 +196,7 @@ header .headline {
   border: 3px solid black;
   height: 50px;
   line-height: 50px;
-  width: 90%;
+  width: 30%;
   margin: 0 auto;
 }
 .here {
@@ -218,7 +218,7 @@ header .headline {
 }
 @media screen and (min-width:375px) and (max-width:1499px){
   .clients .thumbnail-item {
-    width: calc(90%);
+    width: 90%;
     margin-right: 0;
     margin-bottom: 15%;
   }
@@ -405,7 +405,7 @@ footer {
 }
 @media screen and (min-width:375px) and (max-width:1499px){
   .input {
-    width: calc(100%);
+    width: 100%;
     margin-right: 0;
   }
   .outer-location {
@@ -416,7 +416,7 @@ footer {
   margin-right: 0;
 }
 .message {
-  width: calc(100%);
+  width: 100%;
 }
 .send {
   float: right;
