@@ -1,0 +1,68 @@
+@charset "utf-8";
+.container {
+  margin: 100px;
+}
+
+.anime {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: red;
+  animation: anime 4s ease-in-out infinite;
+}
+
+@keyframes anime {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.anime1 {
+  background-color: steelblue;
+  animation: anime1 2s ease-in-out infinite;
+}
+@keyframes anime1 {
+  from {
+    transform: rotate(-90deg);
+  }
+}
+.anime2 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: green;
+}
+.anime2:hover {
+  animation: anime2 2s ease-in-out infinite;
+}
+@keyframes anime2 {
+  to {
+    transform: scale(5, 1);
+  }
+}
+.anime3 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: pink;
+}
+.anime3:hover {
+  animation: anime3 2s ease-in-out infinite;
+}
+@keyframes anime3 {
+  to {
+    transform: translateX(300px);
+  }
+}
