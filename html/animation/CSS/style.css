@@ -30,6 +30,9 @@
 }
 
 .anime1 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
   background-color: steelblue;
   animation: anime1 2s ease-in-out infinite;
 }
