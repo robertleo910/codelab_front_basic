@@ -1,0 +1,43 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: calc(1280 / 1920 * 100%);
+  margin: 50px auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.header {
+  background: #e6e6fa;
+  padding: 5rem 0;
+}
+.footer {
+  background: #add8e6;
+  padding: 5rem 0;
+}
+
+/*以下に自身でcssを記載する*/
+.main {
+  height: 200px;
+}
+.menu {
+  float: left;
+  border: 1px solid black;
+  padding: 5em 2em;
+  background-color: rgb(240, 224, 218);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.main::after {
+  clear: both;
+  display: block;
+  content: "";
+}

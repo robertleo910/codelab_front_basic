@@ -51,7 +51,7 @@ main .top p {
 }
 
 .tenji {
-  background-image: url(../images/bg_special.jpg);
+  background-color: rgba(20%, 100%, 20%, 10%);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -59,7 +59,7 @@ main .top p {
 }
 
 .event {
-  background-image: url(../images/bg_event.jpg);
+  background-color: rgba(20%, 20%, 100%, 10%);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;

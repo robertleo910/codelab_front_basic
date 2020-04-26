@@ -1,0 +1,43 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(188, 225, 228);
+}
+.wrap {
+  max-width: calc(1280 / 1920 * 100%);
+  margin: 50px auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.header,
+.footer {
+  padding: 3rem 0;
+}
+.header {
+  background-color: rgb(223, 170, 240);
+}
+.left-side,
+.right-side {
+  padding: 5em 1em;
+}
+.left-side {
+  float: left;
+  background-color: rgb(236, 204, 175);
+}
+.right-side {
+  float: right;
+  background-color: rgb(231, 99, 99);
+}
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.footer {
+  background-color: rgb(150, 171, 233);
+}
